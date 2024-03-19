@@ -1,30 +1,45 @@
 <div>
-    <!-- Let all your things have their places; let each part of your business have its time. - Benjamin Franklin -->
+    <h1 class="font-serif"> Register</h1>
 
-    <form action="/register" method="post">
+    <form class="/register" method="post">
         @csrf
-        <h1>Register</h1>
 
-         <div>
-            <label for="">Name</label>
-            <input type="text" namr="name">
+        <div>
+            <label for=""class=font-serif>Name</label>
+            <input type="text" nombre="nombre">
+            @error('nombre')
+                <p>{{$message}} </p>
+            @enderror
         </div>
 
         <div>
-            <label for="">Email</label>
-            <input type="text" name="email">
+            <label for="" class=font-serif>Email</label>
+            <input type="text" nombre="email">
+            @error('email')
+                <p>{{$message}} </p>
+            @enderror
         </div>
 
         <div>
-            <label for="">Password</label>
-             <input type="password" name="password">
+            <label for="" class=font-serif>Password</label>
+            <input type="password" nombre="password">
+            @error('password')
+                <p>{{$message}} </p>
+            @enderror
         </div>
 
-         <div>
-            <label for="">Birthday</label>
-            <input type="date" name="birthday">
+        <div>
+            <label for="" class=font-serif>Birthday</label>
+            <input type="date" nombre="birthday">
+            @error('birthday')
+                <p>{{$message}} </p>
+            @enderror
         </div>
 
         <button type="submit">Send</button>
     </form>
 </div>
+
+
+
+

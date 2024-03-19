@@ -15,4 +15,6 @@
                 <p>{{$message}} </p>
             @enderror
         </div>
-        <button type="
+        <button type="submit" class="text-xx border p-1 font-serif">Log in</button>
+    </form>
+</x-layaout>
