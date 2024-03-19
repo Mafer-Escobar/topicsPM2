@@ -14,3 +14,5 @@
             @error('password')
                 <p>{{$message}} </p>
             @enderror
+        </div>
+        <button type="
