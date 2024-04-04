@@ -1,7 +1,7 @@
 <x-layout>
     <h1 class="text-3xl font-bold text-center font-fuente">Log In</h1>
     <form class=text-center action="/login" method="POST">
-   
+    
         @csrf
     
     <div class="space-y-10">
